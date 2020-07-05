@@ -1,5 +1,9 @@
 # FISC: An 8-bit TTL CPU with a Stack Register
 
+**Please note**: The FISC design has some major flaws. Rather than
+fix them, I've incorporated the fixes into the next version of the
+design: ![FISC2](https://github.com/DoctorWkt/2FISC).
+
 FISC is an 8-bit microseqenced CPU wth a 64K address space built from
 discrete TTL-level components. It provides:
 
@@ -30,13 +34,12 @@ At present, I have:
  + a simple compiler, [clc](clc)
  + example assembly and higher-level programs in [Examples](Examples)
  + a Verilog design in [Verilog](Verilog)
- + an initial schematic in [Kicad/schematic.pdf](Kicad/schematic.pdf)
+ + a schematic in [Kicad/schematic.pdf](Kicad/schematic.pdf)
 
 ## Status of the CPU
 
-**mid-June, 2020**: The PCBs have arrived and I've soldered on about
-two thirds of the components. So far, only one wiring mistake. The
-CPU can output data from the ROM to the UART and loop. Next will be
-the registers and the RAM.
+**mid-June, 2020**: I've ordered PCBs and they have arrived and I've soldered
+on all the components. The CPU passes most of the tests but I have an issue
+with addition that I am still working on.
 
 For more detail on progress, you can read my [journal](Docs/journal.md).
